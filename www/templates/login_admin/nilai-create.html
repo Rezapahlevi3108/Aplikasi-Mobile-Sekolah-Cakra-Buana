@@ -1,0 +1,43 @@
+<ion-view cache-view="false" hide-nav-bar="true">
+    
+    <ion-header-bar>
+        <a class="button icon ion-ios-arrow-back" href="#/adm/nilai">Nilai</a>
+        <h1 class="title"> Tambah Nilai</h1>
+        <a class="button icon ion-clipboard" ng-click="createNilai()">Add</a>
+    </ion-header-bar>
+
+    <ion-content>
+        <form ng-submit="createNilai()">
+            <div class="list">
+
+                <label class="item item-input" >
+                    <span class="input-label">Siswa</span>
+                    <select ng-model="nilaisData.nis" ng-options="x.nis as x.nama for x in showSiswa">
+                      </select>
+                      
+                </label>
+                
+                <label class="item item-input" >
+                    <span class="input-label">Mata Pelajaran</span>
+                    <select  ng-model="nilaisData.kdmtp" ng-options="y.kdmtp as y.namamtp for y in showMtp">
+                        
+                      </select>
+                </label>
+
+                <label class="item item-input">
+                    <span class="input-label">Nilai</span>
+                    <input type="text" value="" ng-model="nilaisData.nilai_smt">
+                </label>
+
+                <label class="item item-input">
+                    <span class="input-label">KKM</span>
+                    <input type="text" value="" ng-model="nilaisData.kkm">
+                </label>
+
+                <label class="item">
+                    <button class="button button-block button-positive">Simpan</button>
+                </label>
+            </div>
+        </form>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,26 @@
+<ion-view cache-view="false" hide-nav-bar="true">
+    
+    <ion-header-bar>
+        <a class="button icon ion-ios-arrow-back" href="#/adm/mtp">Mata Pelajaran</a>
+        <h1 class="title"> Tambah Mata Pelajaran</h1>
+        <a class="button icon ion-clipboard" ng-click="createMtp()">Add</a>
+    </ion-header-bar>
+
+    <ion-content>
+        <form ng-submit="createMtp()">
+            <div class="list">
+                <label class="item item-input">
+                    <span class="input-label">Kode Mata Pelajaran</span>
+                    <input type="text" value="" ng-model="mtpsData.mtp_kdmtp">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Nama Mata Pelajaran</span>
+                    <input type="text" value="" ng-model="mtpsData.mtp_namamtp">
+                </label>
+                <label class="item">
+                    <button class="button button-block button-positive">Simpan</button>
+                </label>
+            </div>
+        </form>
+    </ion-content>
+</ion-view>

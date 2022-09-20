@@ -1,0 +1,19 @@
+<ion-view>
+    <ion-nav-bar>
+        <ion-nav-buttons side="primary">
+            <button class="button" ng-click="doAbout()">Back</button>
+        </ion-nav-buttons>
+        <ion-nav-title>Cakra Buana</ion-nav-title>
+    </ion-nav-bar>
+    <ion-content>
+        <div class='padding'>
+            <h2>Kegiatan</h2>
+        </div>
+        <ion-list>
+            <ion-item ng-repeat="p in posts" href="#/detailkegiatan/{{p.id}}">
+                <strong>{{p.title.rendered}}</strong><br>
+                <small>{{p.date | date : "dd MMM y" }}</small>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

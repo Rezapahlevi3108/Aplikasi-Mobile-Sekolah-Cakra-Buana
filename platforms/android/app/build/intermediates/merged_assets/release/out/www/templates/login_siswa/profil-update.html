@@ -1,0 +1,28 @@
+<ion-view cache-view="false" hide-nav-bar="true" view-title="Update">
+    <ion-header-bar class="bar bar-stable">
+        <button class="button button-icon button-clear ion-navicon" style="color: #fff;" menu-toggle="left"></button>
+        <h1 class="title">Update Password</h1>
+    </ion-header-bar>
+    <ion-content>
+        <form ng-submit="updateSiswa()">
+            <div class="list">
+                <input type="hidden" ng-model="siswaData.nis">
+                <label class="item item-input">
+                    <span class="input-label">NIS</span>
+                    <input type="text" ng-model="siswaData.nis" readonly>
+                </label>
+                <label class="item item-input">
+                    <span class="input-label" >Nama</span>
+                    <input type="text" ng-model="siswaData.nama" readonly>
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Password</span>
+                    <input type="password" ng-model="siswaData.siswapass">
+                </label>
+                <label class="item">
+                    <button class="button button-block button-positive">Update Password</button>
+                </label>
+            </div>
+        </form>
+    </ion-content>
+</ion-view>

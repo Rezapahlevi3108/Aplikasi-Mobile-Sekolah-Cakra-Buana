@@ -1,0 +1,20 @@
+<ion-view view-title="Nilai"cache-view="false" hide-nav-bar="true">
+
+    <ion-header-bar class="bar bar-stable">
+        <a class="button button-icon button-clear ion-navicon" style="color: #fff;" menu-toggle="left"></a>
+        <h1 class="title">Nilai</h1>
+        <a class="button icon ion-clipboard" href="#/adm/nilai-create">Add</a>
+    </ion-header-bar>
+
+    <ion-content>
+        <ion-list ng-controller="NilaiCtrl">
+            <ion-item class="item item-icon-left item-icon-right" ng-repeat="x in showNilai" href="#/adm/nilai-update/{{x.idnilai}}">
+                <i class="icon ion-document-text"></i>
+                {{x.nis}} || {{x.kdmtp}} || {{x.nilai_smt}}|| {{x.kkm}}
+                <a class="button button-icon icon ion-ios-trash" ng-click="delNilai({{x.idnilai}})"></a>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+
+</ion-view>
+

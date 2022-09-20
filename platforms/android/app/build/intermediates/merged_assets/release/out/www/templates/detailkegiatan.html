@@ -1,0 +1,17 @@
+<ion-view>
+    <ion-nav-bar>
+        <ion-nav-buttons side="primary">
+            <button class="button" ng-click="doAbout()">Back</button>
+        </ion-nav-buttons>
+        <ion-nav-title>Cakra Buana</ion-nav-title>
+    </ion-nav-bar>
+    <ion-content>
+        <div class='padding'>
+            <h3>
+                {{ posts.title.rendered }}
+            </h3>
+        </div>
+        <small class="padding">{{ posts.date | date : "dd MMM y" }} </small>
+        <div class='padding content' ng-bind-html="posts.content.rendered"></div>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\Reza\\ionic-app\\myCakraBuana\\platforms\\android\\app\\build\\intermediates\\res\\merged\\release\\values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\Reza\\ionic-app\\myCakraBuana\\platforms\\android\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "4,2,3",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "171,55,112",
+                        "endColumns": "63,56,58",
+                        "endOffsets": "230,107,166"
+                    },
+                    "to": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,119,176",
+                        "endColumns": "63,56,58",
+                        "endOffsets": "114,171,230"
+                    }
+                }
+            ]
+        }
+    ]
+}

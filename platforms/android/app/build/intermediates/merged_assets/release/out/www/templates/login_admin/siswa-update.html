@@ -1,0 +1,34 @@
+<ion-view cache-view="false" hide-nav-bar="true">
+    <ion-header-bar>
+        <a class="button icon ion-ios-arrow-back" href="#/adm/siswa">Siswa</a>
+        <h1 class="title">Update Siswa</h1>
+        <a class="button icon ion-person-add" ng-click="updateSiswa()">Update</a>
+    </ion-header-bar>
+    <ion-content>
+        <form ng-submit="updateSiswa()">
+            <div class="list">
+                <input type="hidden" ng-model="siswa1Data.nis">
+                <label class="item item-input">
+                    <span class="input-label">Nama</span>
+                    <input type="text" ng-model="siswa1Data.nama">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Alamat</span>
+                    <input type="text" ng-model="siswa1Data.alamat">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Jenis Kelamin</span>
+                    <input type="text" ng-model="siswa1Data.jen_kel">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Password</span>
+                    <input type="password" ng-model="siswa1Data.siswapass">
+                </label>
+                
+                <label class="item">
+                    <button class="button button-block button-positive">Update</button>
+                </label>
+            </div>
+        </form>
+    </ion-content>
+</ion-view>

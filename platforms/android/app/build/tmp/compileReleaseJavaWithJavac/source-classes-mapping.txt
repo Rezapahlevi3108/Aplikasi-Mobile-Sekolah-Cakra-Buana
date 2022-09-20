@@ -1,0 +1,34 @@
+id/sch/cakrabuana/MainActivity.java
+ id.sch.cakrabuana.MainActivity
+org/apache/cordova/device/Device.java
+ org.apache.cordova.device.Device
+org/apache/cordova/whitelist/WhitelistPlugin.java
+ org.apache.cordova.whitelist.WhitelistPlugin
+ org.apache.cordova.whitelist.WhitelistPlugin$1
+ org.apache.cordova.whitelist.WhitelistPlugin$CustomConfigXmlParser
+org/apache/cordova/splashscreen/SplashScreen.java
+ org.apache.cordova.splashscreen.SplashScreen
+ org.apache.cordova.splashscreen.SplashScreen$1
+ org.apache.cordova.splashscreen.SplashScreen$2
+ org.apache.cordova.splashscreen.SplashScreen$3
+ org.apache.cordova.splashscreen.SplashScreen$4
+ org.apache.cordova.splashscreen.SplashScreen$4$1
+ org.apache.cordova.splashscreen.SplashScreen$5
+ org.apache.cordova.splashscreen.SplashScreen$5$1
+ org.apache.cordova.splashscreen.SplashScreen$6
+ org.apache.cordova.splashscreen.SplashScreen$6$1
+ org.apache.cordova.splashscreen.SplashScreen$7
+org/apache/cordova/statusbar/StatusBar.java
+ org.apache.cordova.statusbar.StatusBar
+ org.apache.cordova.statusbar.StatusBar$1
+ org.apache.cordova.statusbar.StatusBar$2
+ org.apache.cordova.statusbar.StatusBar$3
+ org.apache.cordova.statusbar.StatusBar$4
+io/ionic/keyboard/IonicKeyboard.java
+ io.ionic.keyboard.IonicKeyboard
+ io.ionic.keyboard.IonicKeyboard$1
+ io.ionic.keyboard.IonicKeyboard$2
+ io.ionic.keyboard.IonicKeyboard$3
+ io.ionic.keyboard.IonicKeyboard$3$1
+id/sch/cakrabuana/BuildConfig.java
+ id.sch.cakrabuana.BuildConfig

@@ -1,0 +1,30 @@
+<ion-view cache-view="false" hide-nav-bar="true">
+    
+    <ion-header-bar>
+        <a class="button icon ion-ios-arrow-back" href="#/adm/nilai">Mata Pelajaran</a>
+        <h1 class="title">Update Nilai</h1>
+        <a class="button icon ion-clipboard" ng-click="updateNilai()">Update</a>
+    </ion-header-bar>
+
+    <ion-content>
+        <form ng-submit="updateNilai()">
+            <div class="list">
+                <input type="hidden" ng-model="nilaiData.idnilai">
+                <input type="hidden" ng-model="nilaiData.nis">
+                <input type="hidden" ng-model="nilaiData.kdmtp">
+                
+                <label class="item item-input">
+                    <span class="input-label">Nilai</span>
+                    <input type="text" value="" ng-model="nilaiData.nilai_smt">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">KKM</span>
+                    <input type="text" value="" ng-model="nilaiData.kkm">
+                </label>
+                <label class="item">
+                    <button class="button button-block button-positive">Update</button>
+                </label>
+            </div>
+        </form>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,26 @@
+<ion-view view-title="Mahasiswa" cache-view="false" hide-nav-bar="true">
+
+    <ion-header-bar class="bar bar-stable">
+        <a class="button button-icon button-clear ion-navicon" style="color: #fff;" menu-toggle="left"></a>
+        <h1 class="title">Siswa</h1>
+        <a class="button icon ion-person-add" href="#/adm/siswa-create">Add</a>
+    </ion-header-bar>
+
+    <ion-content>
+        <ion-list ng-controller="SiswaCtrl">
+            <ion-item class="item item-icon-left item-icon-right" ng-repeat="x in showSiswa" href="#/adm/siswa-update/{{x.nis}}">
+                <i class="icon ion-person"></i>
+                {{x.nis}} || {{x.nama}}
+                <a class="button button-icon icon ion-ios-trash" ng-click="delSiswa({{x.nis}})"></a>
+            </ion-item>
+        </ion-list>
+        
+        <ion-list ng-controller="SiswaCtrl">
+            <ion-item class="item item-icon-left item-icon-right" ng-repeat="x in showHitung" >
+                <p>Jumlah Siswa = {{x}} </p>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+
+</ion-view>
+

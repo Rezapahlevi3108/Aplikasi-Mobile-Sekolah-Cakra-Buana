@@ -1,0 +1,80 @@
+<ion-view view-title="Nilai"cache-view="false" hide-nav-bar="true">
+
+    <ion-header-bar class="bar bar-stable">
+        <button class="button" ng-click="doBack()">Back</button>
+        <h1 class="title">Raport</h1>
+    </ion-header-bar>
+
+    <style>
+        table, th, td {
+          border:2px solid black;
+        }
+
+        table {
+        counter-reset: rowNumber;
+        }
+
+        table td:first-child:before {
+        display: table-cell;
+        counter-increment: rowNumber;
+        content: counter(rowNumber) ".";
+        }
+    </style>
+
+    <ion-content style="padding-left: 16px;">
+        <div class="row" ng-controller="MainCtrl">
+            <div class="col col-50">
+                <p>NAMA SISWA</p>
+            </div>
+            <div class="col">
+                <p>: {{ name }}</p>
+            </div>      
+        </div>
+        <div class="row">
+            <div class="col col-50">
+                <p>NIS / NISN</p>
+            </div>
+            <div class="col">
+                <p>: {{ id }}</p>
+            </div>      
+        </div>
+        <div class="row">
+            <div class="col col-50">
+                <p>KELAS</p>
+            </div>
+            <div class="col">
+                <p>: XII (DUA BELAS)</p>
+            </div>      
+        </div>
+        <div class="row">
+            <div class="col col-50">
+                <p>SEMESTER</p>
+            </div>
+            <div class="col">
+                <p>: GENAP</p>
+            </div>      
+        </div>
+        <div class="row">
+            <div class="col col-50">
+                <p>PROGRAM KEAHLIAN / KOMPETENSI KEAHLIAN</p>
+            </div>
+            <div class="col">
+                <p>: TP3TV 2</p>
+            </div>      
+        </div>
+        <table style="width:95%;">
+            <tr style="text-align: center;">
+                <th>No</th>
+                <th style="width: 60%;">Mata Pelajaran</th>
+                <th>KKM</th>
+                <th>Nilai</th>
+            </tr>
+            <tr ng-controller="NilaiCtrl" ng-repeat="x in shownilaiData">
+                <td></td>
+                <td><div class="col col-75">{{x.namamtp}}</div></td>
+                <td><div class="col"> {{x.kkm}} </div></td>
+                <td><div class="col"> {{x.nilai_smt}} </div> </td>
+            </tr>
+        </table>
+    </ion-content>
+</ion-view>

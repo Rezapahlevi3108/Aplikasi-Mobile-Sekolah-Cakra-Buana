@@ -1,0 +1,32 @@
+<ion-view view-title="Nilai"cache-view="false" hide-nav-bar="true">
+
+    <ion-header-bar class="bar bar-stable">
+        <a class="button button-icon button-clear ion-navicon" style="color: #fff;" menu-toggle="left"></a>
+        <h1 class="title">Nilai</h1>
+    </ion-header-bar>
+
+    <ion-content>
+      <ion-list ng-controller="MainCtrl">
+        <ion-item class="item item-icon-left item-icon-left" href="#/app/raport/{{id}}">
+            <i class="icon ion-document-text"></i>
+            Raport {{name}}
+        </ion-item>
+      </ion-list>
+        <div class="row">
+            <div class="card col col-30">
+              <div class="item item-divider">
+                Nilai
+              </div>
+              <div class="item item-text-wrap">
+                <ion-list ng-controller="NilaiCtrl">
+                    <ion-item ng-repeat="x in shownilaiData">
+                      <div class="row">
+                        <div class="col col-75">{{x.namamtp}}</div>
+                        <div class="col">{{x.nilai_smt}} </div>      
+                      </div>
+                    </ion-item>
+                </ion-list>
+              </div>
+            </div>
+    </ion-content>
+</ion-view>
